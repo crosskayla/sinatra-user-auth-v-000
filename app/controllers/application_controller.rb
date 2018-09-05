@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
     @user = User.find(session[:id])
     if @user
       erb :'/users/home'
-    else 
+    else
       redirect 'sessions/login'
     end
   end
